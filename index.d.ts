@@ -6,6 +6,11 @@ declare module 'connected-react-router' {
   interface ConnectedRouterProps {
     history: History
   }
+  
+  export interface LocationChangeAction {
+    type: LOCATION_CHANGE;
+    payload: RouterState;
+  }
 
   export interface RouterState {
     location: {
